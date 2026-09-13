@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public-Show - फीड</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 28px;
+            color: #262626;
+            font-weight: bold;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #262626;
+            margin-left: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .feed-container {
+            max-width: 470px;
+            margin: 20px auto;
+        }
+        .post-card {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #dbdbdb;
+            margin-right: 10px;
+        }
+        .username {
+            font-weight: bold;
+            font-size: 14px;
+            color: #262626;
+        }
+        .post-image {
+            width: 100%;
+            height: 350px;
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #8e8e8e;
+            font-size: 14px;
+        }
+        .post-actions {
+            padding: 10px 15px;
+            display: flex;
+            gap: 15px;
+            font-size: 20px;
+        }
+        .post-footer {
+            padding: 0 15px 15px 15px;
+            font-size: 14px;
+            color: #262626;
+        }
+        .post-footer span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Public-Show</div>
+        <div class="nav-links">
+            <a href="stage.html">होम</a>
+            <a href="index.html">लॉग आउट</a>
+        </div>
+    </header>
+
+    <div class="feed-container">
+        <!-- पहली पोस्ट -->
+        <div class="post-card">
+            <div class="post-header">
+                <div class="profile-pic"></div>
+                <div class="username">andip_kumar</div>
+            </div>
+            <div class="post-image">
+                यहाँ पब्लिक शो की शानदार झलक होगी
+            </div>
+            <div class="post-actions">
+                <span>❤️</span> <span>💬</span> <span>✈️</span>
+            </div>
+            <div class="post-footer">
+                <span>andip_kumar</span> दुनिया के सामने अपना हुनर पेश कर रहा हूँ! #PublicShow #Original
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
