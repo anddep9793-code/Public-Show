@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public-Show - नोटिफिकेशंस</title>
+    <title>Public-Show - संदेश (Messages)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,11 +28,11 @@
         .nav-links a {
             text-decoration: none;
             color: #262626;
-            margin-left: 15px;
+            margin-left: 12px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
         }
-        .notif-container {
+        .chat-container {
             max-width: 500px;
             margin: 20px auto;
             background-color: #fff;
@@ -40,7 +40,7 @@
             border-radius: 4px;
             padding: 15px;
         }
-        .notif-title {
+        .chat-title {
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 15px;
@@ -48,25 +48,29 @@
             border-bottom: 1px solid #dbdbdb;
             padding-bottom: 10px;
         }
-        .notif-item {
+        .chat-item {
             display: flex;
             align-items: center;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #efefef;
+            cursor: pointer;
         }
-        .notif-pic {
-            width: 40px;
-            height: 40px;
+        .chat-pic {
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             background-color: #dbdbdb;
             margin-right: 15px;
         }
-        .notif-text {
+        .chat-info h4 {
+            margin: 0 0 4px 0;
             font-size: 14px;
             color: #262626;
         }
-        .notif-text span {
-            font-weight: bold;
+        .chat-info p {
+            margin: 0;
+            font-size: 13px;
+            color: #8e8e8e;
         }
     </style>
 </head>
@@ -74,28 +78,33 @@
 
     <header>
         <div class="logo">Public-Show</div>
-        .nav-links {
+        <div class="nav-links">
             <a href="stage.html">होम</a>
             <a href="upload.html">अपलोड</a>
+            <a href="notifications.html">नोटिफिकेशन</a>
+            <a href="messages.html">चैट</a>
             <a href="profile.html">प्रोफाइल</a>
             <a href="index.html">लॉग आउट</a>
         </div>
     </header>
 
-    <div class="notif-container">
-        <div class="notif-title"> गतिविधियाँ और सूचनाएं</div>
-
-        <div class="notif-item">
-            <div class="notif-pic"></div>
-            <div class="notif-text"><span>pradeep_kumar</span> ने आपके पब्लिक शो को पसंद किया।</div>
+    <div class="chat-container">
+        <div class="chat-title">संदेश (Direct Messages)</div>
+        <div class="chat-item">
+            <div class="chat-pic"></div>
+            <div class="chat-info">
+                <h4>pradeep_kumar</h4>
+                <p>नमस्ते! आपका नया शो बहुत अच्छा लगा।</p>
+            </div>
         </div>
-
-        <div class="notif-item">
-            <div class="notif-pic"></div>
-            <div class="notif-text"><span>amit_show</span> ने आपकी पोस्ट पर एक टिप्पणी की।</div>
+        <div class="chat-item">
+            <div class="chat-pic"></div>
+            <div class="chat-info">
+                <h4>amit_show</h4>
+                <p>अगला शो कब आ रहा है?</p>
+            </div>
         </div>
     </div>
 
 </body>
 </html>
-
