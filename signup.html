@@ -3,82 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public-Show - साइन अप</title>
+    <title>Public-Show - प्रोफाइल</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #fafafa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
         }
-        .signup-container {
+        header {
             background-color: #fff;
-            border: 1px solid #dbdbdb;
-            padding: 30px;
-            width: 350px;
-            text-align: center;
-            border-radius: 4px;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .logo {
             font-family: 'Brush Script MT', cursive;
-            font-size: 40px;
-            margin-bottom: 25px;
+            font-size: 28px;
             color: #262626;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #dbdbdb;
-            background-color: #fafafa;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
-        .signup-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #0095f6;
-            color: white;
-            border: none;
-            border-radius: 4px;
             font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
         }
-        .login-link {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #262626;
-        }
-        .login-link a {
-            color: #0095f6;
+        .nav-links a {
             text-decoration: none;
+            color: #262626;
+            margin-left: 12px;
             font-weight: bold;
+            font-size: 13px;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #dbdbdb;
+            margin: 0 auto 15px auto;
+        }
+        .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #262626;
+            margin-bottom: 5px;
+        }
+        .profile-bio {
+            font-size: 14px;
+            color: #8e8e8e;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="signup-container">
+    <header>
         <div class="logo">Public-Show</div>
-        <p style="color: #8e8e8e; font-size: 14px; margin-bottom: 20px;">दोस्तों के साथ जुड़ने के लिए साइन अप करें।</p>
-        
-        <form>
-            <input type="email" placeholder="मोबाइल नंबर या ईमेल" required>
-            <input type="text" placeholder="पूरा नाम" required>
-            <input type="text" placeholder="यूसरनेम" required>
-            <input type="password" placeholder="पासवर्ड" required>
-            <button type="submit" class="signup-btn">साइन अप करें</button>
-        </form>
-
-        <div class="login-link">
-            क्या खाता पहले से है? <a href="index.html">लॉग इन करें</a>
+        <div class="nav-links">
+            <a href="stage.html">होम</a>
+            <a href="upload.html">अपलोड</a>
+            <a href="notifications.html">नोटिफिकेशन</a>
+            <a href="messages.html">चैट</a>
+            <a href="profile.html">प्रोफाइल</a>
+            <a href="index.html">लॉग आउट</a>
         </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-pic"></div>
+        <div class="profile-name">andip_kumar</div>
+        <div class="profile-bio">स्वागत है मेरे पब्लिक-शो प्रोफाइल पर!</div>
     </div>
 
 </body>
-  </html>
-
+</html>
