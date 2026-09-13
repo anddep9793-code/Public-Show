@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public-Show - नया शो अपलोड करें</title>
+    <title>Public-Show - अपलोड</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,57 +28,36 @@
         .nav-links a {
             text-decoration: none;
             color: #262626;
-            margin-left: 15px;
+            margin-left: 12px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
         }
         .upload-container {
-            max-width: 470px;
-            margin: 30px auto;
+            max-width: 450px;
+            margin: 40px auto;
             background-color: #fff;
             border: 1px solid #dbdbdb;
             border-radius: 4px;
-            padding: 20px;
-        }
-        .upload-title {
-            font-size: 16px;
-            font-weight: bold;
+            padding: 30px;
             text-align: center;
-            margin-bottom: 20px;
+        }
+        .upload-container h2 {
+            font-size: 18px;
             color: #262626;
-            border-bottom: 1px solid #dbdbdb;
-            padding-bottom: 10px;
-        }
-        .drop-box {
-            border: 2px dashed #dbdbdb;
-            padding: 40px 20px;
-            text-align: center;
-            color: #8e8e8e;
             margin-bottom: 20px;
-            border-radius: 4px;
-            background-color: #fafafa;
         }
-        textarea {
-            width: 100%;
-            height: 80px;
-            padding: 10px;
-            border: 1px solid #dbdbdb;
-            border-radius: 4px;
-            resize: none;
-            box-sizing: border-box;
-            margin-bottom: 15px;
-            font-family: Arial, sans-serif;
+        .file-input {
+            margin: 20px 0;
         }
-        .publish-btn {
-            width: 100%;
-            padding: 10px;
+        .upload-btn {
             background-color: #0095f6;
             color: white;
             border: none;
+            padding: 10px 20px;
             border-radius: 4px;
             font-weight: bold;
             cursor: pointer;
-            font-size: 15px;
+            width: 100%;
         }
     </style>
 </head>
@@ -88,23 +67,21 @@
         <div class="logo">Public-Show</div>
         <div class="nav-links">
             <a href="stage.html">होम</a>
+            <a href="upload.html">अपलोड</a>
+            <a href="notifications.html">नोटिफिकेशन</a>
+            <a href="messages.html">चैट</a>
             <a href="profile.html">प्रोफाइल</a>
             <a href="index.html">लॉग आउट</a>
         </div>
     </header>
 
     <div class="upload-container">
-        <div class="upload-title">अपना नया शो साझा करें</div>
-        
-        <div class="drop-box">
-            यहाँ अपनी फोटो या वीडियो चुनें
+        <h2>नई पोस्ट अपलोड करें</h2>
+        <div class="file-input">
+            <input type="file">
         </div>
-
-        <textarea placeholder="अपने शो के बारे में कुछ लिखें... (कैप्शन दें)"></textarea>
-
-        <button class="publish-btn">पब्लिक शो पर लाइव करें</button>
+        <button class="upload-btn" onclick="alert('पोस्ट अपलोड हो गई!')">शेयर करें</button>
     </div>
 
 </body>
 </html>
-
