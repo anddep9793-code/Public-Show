@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public-Show - Login / Sign Up</title>
+    <title>Public-Show - लॉगिन</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,9 +47,6 @@
             margin-top: 10px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #1877f2;
-        }
         .switch {
             margin-top: 15px;
             font-size: 14px;
@@ -66,16 +63,15 @@
 
     <div class="container">
         <h1>Public-Show</h1>
-        <form>
-            <input type="text" placeholder="मोबाइल नंबर, यूजरनेम या ईमेल" required>
+        <form action="stage.html" method="GET">
+            <input type="text" placeholder="मोबाइल नंबर, यूज़रनेम या ईमेल" required>
             <input type="password" placeholder="पासवर्ड" required>
             <button type="submit">लॉग इन करें</button>
         </form>
         <div class="switch">
-            खाता नहीं है? <a href="#">साइन अप करें</a>
+            खाता नहीं है? <a href="signup.html">साइन अप करें</a>
         </div>
     </div>
 
 </body>
-  </html>
-  
+</html>
