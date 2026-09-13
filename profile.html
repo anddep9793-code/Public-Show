@@ -28,51 +28,36 @@
         .nav-links a {
             text-decoration: none;
             color: #262626;
-            margin-left: 15px;
+            margin-left: 12px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
         }
         .profile-container {
             max-width: 600px;
             margin: 30px auto;
-            padding: 0 20px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
         }
-        .profile-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        .profile-pic-large {
-            width: 80px;
-            height: 80px;
+        .profile-pic {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             background-color: #dbdbdb;
-            margin-right: 30px;
+            margin: 0 auto 15px auto;
         }
-        .profile-info h2 {
-            margin: 0 0 5px 0;
+        .profile-name {
             font-size: 20px;
+            font-weight: bold;
             color: #262626;
+            margin-bottom: 5px;
         }
-        .profile-info p {
-            margin: 0;
-            color: #8e8e8e;
+        .profile-bio {
             font-size: 14px;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        .gallery-item {
-            background-color: #efefef;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: #8e8e8e;
-            font-size: 12px;
-            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -82,27 +67,18 @@
         <div class="logo">Public-Show</div>
         <div class="nav-links">
             <a href="stage.html">होम</a>
+            <a href="upload.html">अपलोड</a>
+            <a href="notifications.html">नोटिफिकेशन</a>
+            <a href="messages.html">चैट</a>
             <a href="profile.html">प्रोफाइल</a>
             <a href="index.html">लॉग आउट</a>
         </div>
     </header>
 
     <div class="profile-container">
-        <div class="profile-header">
-            <div class="profile-pic-large"></div>
-            <div class="profile-info">
-                <h2>andip_kumar</h2>
-                <p>पब्लिक शो क्रिएटर | अपनी कला दुनिया तक पहुँचाना</p>
-            </div>
-        </div>
-
-        <hr style="border: none; border-top: 1px solid #dbdbdb; margin-bottom: 20px;">
-
-        <div class="gallery">
-            <div class="gallery-item">शो 1</div>
-            <div class="gallery-item">शो 2</div>
-            <div class="gallery-item">शो 3</div>
-        </div>
+        <div class="profile-pic"></div>
+        <div class="profile-name">andip_kumar</div>
+        <div class="profile-bio">स्वागत है मेरे पब्लिक-शो प्रोफाइल पर!</div>
     </div>
 
 </body>
